@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Second Brain">
+  <rect width="64" height="64" rx="14" fill="#111114"/>
+  <path d="M21 36c-5 0-9-4-9-9 0-4 3-8 7-9 2-5 7-8 13-8 7 0 13 5 14 12 4 2 6 5 6 10 0 6-5 11-11 11H24c-2 0-3 2-3 4s2 4 4 4h16" fill="none" stroke="#2dd4bf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M25 20v22M34 15v29M43 25v17" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+</svg>

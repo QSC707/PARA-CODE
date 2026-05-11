@@ -4,42 +4,49 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 98%;
-    --card-foreground: 222.2 84% 4.9%;
-    --primary: 221.2 83.2% 53.3%;
+    --background: 42 25% 97%;
+    --foreground: 230 16% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 230 16% 12%;
+    --primary: 173 62% 36%;
     --primary-foreground: 210 40% 98%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 35%;
-    --accent: 210 40% 94%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --border: 214.3 31.8% 85%;
-    --secondary: 210 40% 90%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 40 18% 91%;
+    --muted-foreground: 224 12% 38%;
+    --accent: 42 20% 92%;
+    --accent-foreground: 230 16% 12%;
+    --border: 36 18% 84%;
+    --secondary: 174 35% 88%;
+    --secondary-foreground: 230 16% 12%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 8%;
+    --background: 240 10% 6%;
+    --foreground: 36 24% 94%;
+    --card: 240 8% 10%;
     --card-foreground: 210 40% 98%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --secondary: 217.2 32.6% 20%;
+    --primary: 173 62% 43%;
+    --primary-foreground: 180 25% 8%;
+    --muted: 240 7% 17%;
+    --muted-foreground: 35 12% 68%;
+    --accent: 240 7% 14%;
+    --accent-foreground: 36 24% 94%;
+    --border: 240 6% 22%;
+    --secondary: 240 7% 18%;
     --secondary-foreground: 210 40% 98%;
   }
 }
 
 @layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     margin: 0;
@@ -50,11 +57,16 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  button,
+  input {
+    font: inherit;
+  }
 }
 
 @layer components {
   .card {
-    @apply bg-card text-card-foreground rounded-xl border border-border p-6 shadow-sm;
+    @apply bg-card text-card-foreground rounded-lg border border-border p-6 shadow-sm;
   }
 
   .prose {
